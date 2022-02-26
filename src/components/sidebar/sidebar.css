@@ -1,0 +1,61 @@
+.sidebar {
+    flex: 3;
+    /* aggiungo un calcolo per evitare la scrollbar laterale per colpa dei 50px della topbar */
+    height: calc(100vh - 50px);
+    /* così non devo scrollare l'intera pagina, ma solo la sidebar */
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+
+/* per cambiare le impostazioni di un oggetto di scena */
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+}
+
+.sidebarWrapper {
+    padding: 20px;
+}
+
+.sidebarList {
+    padding: 0;
+    margin: 0;
+    /* per togliere i "dot" delle liste */
+    list-style: none;
+}
+
+.sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebarIcon{
+    margin-right: 15px;
+}
+
+.sidebarButton{
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.sidebarHr{
+    margin: 20px 0;
+}
+
+.sidebarFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
